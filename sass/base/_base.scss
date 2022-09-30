@@ -1,0 +1,53 @@
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;   //1rem = 10px 
+  
+    @include respond(small-desktop){  // < 1350px
+      font-size: 59.37%;  //1rem =9.5px
+   }
+
+    @include respond(tab-land){  // < 1200px
+        font-size: 56.25%;  //1rem =9px
+    }
+
+    @include respond(small-tab-land){  // < 1050px
+        font-size: 53.12%;  //1rem =8.5px
+    }
+  
+    @include respond(tab-port){  // < 900px
+      font-size: 50%;  //1rem = 8px
+    }
+
+    @include respond(small-tab-port){   //750px
+      font-size: 46.87%;  //1rem = 7.5px
+    }
+
+    @include respond(phone){   //600px
+      font-size: 40.62%;  //1rem = 6.5px
+    }
+    
+    @include respond(big-desktop){   
+        font-size: 75%; //1rem = 12px
+    }
+}
+
+body{
+  box-sizing: border-box;
+  background-color: $color-primary;
+  font-family: 'Inter', sans-serif;
+  color: $color-black;
+}
+
+::selection{
+  background-color: $color-primary;
+//   color: $color-white;
+}
+

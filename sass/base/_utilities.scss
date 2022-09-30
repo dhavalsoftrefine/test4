@@ -1,0 +1,88 @@
+.header-center{
+    padding: 0rem 2rem;
+}
+
+.section-head{
+    display: flex;
+    justify-content: space-between;
+    color: $color-black;
+    font-size: 2rem;
+    font-weight: 700;
+
+    @include respond(tab-port){  
+        font-size: 2.5rem; 
+    }
+}
+
+.icon__section--head{
+    display: flex;
+    gap: 1rem;
+}
+
+.icon__head{
+    height: $icon-small;
+    height: $icon-small;
+}
+
+.lightblue{
+    background-color: $lightblue;
+    color: rgb(63, 217, 255);
+}
+
+.blue{
+    background-color: rgb(63, 217, 255);
+    color: $color-primary;
+}
+
+
+.orangelight{
+    background-color: $lightorange;
+}
+
+.orange{
+    color: $lightorange;
+    background-color: $color-white;
+}
+
+.lightgreen{
+    background-color: $lightgreen;
+}
+
+.green{
+    color: $lightgreen;
+    background-color: $color-white;
+}
+
+.lightpink{
+    background-color: $lightpink;
+}
+
+.pink{
+    color: $lightpink;
+    background-color: $color-white;
+}
+
+.progress-blue{
+
+    &::after{
+        background-color: $colorblue;
+    }
+}
+
+.progress-orange{
+    &::after{
+        background-color: $colororange;
+    }
+}
+
+.progress-green{
+    &::after{
+        background-color: $colorgreen;
+    }
+}
+
+.progress-pink{
+    &::after{
+        background-color: $colorpink;
+    }
+}

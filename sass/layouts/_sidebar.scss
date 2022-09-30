@@ -1,0 +1,43 @@
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    // background-color: aqua;
+    height: 90vh;
+    width: 7%;
+    padding: 5rem 2rem 0;
+    gap: 2rem;
+    float: left;
+    transition: all 0.5s;
+    // margin-left: -8rem;
+
+    @include respond(tab-land){  
+        padding: 5rem 1rem 0;
+    }
+
+    @include respond(tab-port){ 
+        width: 10%; 
+        padding: 5rem 1rem;
+    }
+
+    @include respond(small-tab-port){
+        margin-left: -10rem;
+        position: absolute;
+        background-color: $color-primary;
+    }
+
+    @include respond(large-phone){
+        margin-top: -3rem;
+        width: 10rem;
+        padding: 3rem 1.5rem;
+    }
+}
+
+#sidebar-checkbox{
+    display: none;
+}
+    
+#sidebar-checkbox:checked + .side-bar{
+    margin-left: 0rem;
+}
+
+

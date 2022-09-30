@@ -1,0 +1,50 @@
+.grid{
+    display: grid;
+    @include respond(tab-port){  
+    }
+}
+
+.grid-2{
+    grid-template-columns: 65% 35%;
+
+    @include respond(tab-port){  
+        grid-template-columns: 95%;
+    }
+    
+}
+ 
+.card-grid{
+    display: grid;
+    gap: 5rem;
+
+    @include respond(tab-port){  
+        // gap: 10rem;
+    }
+
+    // @include respond(large-phone){
+    //     margin-top: -2rem;
+    //     width: 10rem;
+    //     padding: 3rem 1.5rem;
+    // }
+}
+
+.grid-2-same{
+    grid-template-columns: 40% 40%;
+
+    @include respond(large-phone){  
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-3{
+    grid-template-columns: 10% 60% 30%;
+    
+    @include respond(small-tab-port){ 
+        grid-template-columns: 10% 50% 40%;
+    }
+
+    @include respond(small-tab-port){ 
+        grid-template-columns: 15% 50% 35%;
+    }
+}
+

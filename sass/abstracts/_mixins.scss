@@ -1,0 +1,78 @@
+
+//media query manager
+
+// 0px-600 Phone
+// 600-900 tablet portrait
+//900-1200 tablet landscape
+//1200-1800 normal style
+// 188+ big desktop
+
+@mixin respond-phone {
+    @media (max-width: 600px){
+        @content
+    }
+};
+
+/*
+$breakpoint argument choice:
+
+-phone
+-tabl-port
+-tab-land
+-big-desktop
+*/
+
+
+// ORDER :  Base + typography > general layout + grid > page layout > componenets
+
+@mixin  respond($breakpoint) {
+
+        
+    @if $breakpoint == phone{
+        @media  only screen and (max-width: 28.12em){   //450px
+            @content
+        }
+    };
+
+    @if $breakpoint == large-phone{
+        @media only screen and (max-width: 37.5em){   //600px
+            @content
+        }
+    };
+
+    @if $breakpoint == small-tab-port{
+        @media  only screen and (max-width: 46.87em){   //750px
+            @content
+        }
+    };
+ 
+    @if $breakpoint == tab-port{
+        @media  only screen and  (max-width: 56.25em){  //900px
+            @content
+        }
+    };  
+
+    @if $breakpoint == small-tab-land{
+        @media  only screen and (max-width: 65.62em){   //1050px
+            @content
+        }
+    };
+
+    @if $breakpoint == tab-land{
+        @media  only screen and (max-width: 75em){   //1200px
+            @content
+        }
+    };
+    
+    @if $breakpoint == small-desktop{
+        @media  only screen and (max-width: 84.3em){   //1350px
+            @content
+        }
+    };
+    @if $breakpoint == big-desktop{
+        @media  only screen and (min-width: 112.5em){   //1800px
+            @content
+        }
+    };
+}
+
