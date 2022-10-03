@@ -42,8 +42,9 @@ html{
 body{
   box-sizing: border-box;
   background-color: $color-primary;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', 'Poppins', sans-serif;
   color: $color-black;
+  position: relative  ;
 }
 
 ::selection{

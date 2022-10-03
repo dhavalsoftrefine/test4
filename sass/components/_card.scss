@@ -42,9 +42,16 @@
 .card-project{
     // background-color: rgba(205, 134, 63, 0.536);
     border-radius: 3rem;
-    padding: 2rem;
-    box-shadow: 0px 0px 5px 5px $color-primary;
+    // padding: 2rem;
+    box-shadow: 0px 0px 10px 3px $color-primary;
     // height: 30rem;
+    
+    &:first-child{
+        @include respond(phone){
+            margin-top: 1rem;
+        }
+    }
+
     @include respond(small-tab-land){ 
         width: 112%;
     }
@@ -62,7 +69,12 @@
     }
 
     @include respond(phone){
-        width: 100%;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    &__top{
+        padding: 2rem;
     }
 
     &__head{
@@ -72,7 +84,7 @@
         &__date{
             color: $color-black;
             font-weight: 600;
-            font-size: 2rem;
+            font-size: 1.5rem;
 
             @include respond(small-tab-port){
                 font-size: 1.7rem;
@@ -85,8 +97,8 @@
 
         &__icon{
             color: $color-black-dark;
-            height: $icon-small;
-            width: $icon-small;
+            height: $icon-smaller;
+            width: $icon-smaller;
 
             @include respond(large-phone){
                 height: $icon-medium;
@@ -121,7 +133,7 @@
             color: $color-black;
             font-weight: 600;
             font-size: 1.5rem;   
-
+            margin-top: 1rem;
             @include respond(tab-port){ 
                 font-size: 2rem;
             }
@@ -155,10 +167,10 @@
 
         &-width{
             width: 100%;
-            height: 0.5rem;
+            height: 0.7rem;
             background-color: $color-primary;
             border-radius: 5px;
-            margin: 0.5rem 0;
+            margin: 1rem 0;
             position: relative;
 
             @include respond(large-phone){
@@ -169,7 +181,7 @@
                 content: "";
                 position: absolute;
                 width: 90%;
-                height: 0.5rem;
+                height: 0.7rem;
                 // margin-left: -0.3rem;
                 border-radius: 5px;
             }
@@ -193,7 +205,7 @@
     }
 
     &__last{
-        margin-top: 1rem;
+        margin: 1rem 0 1rem 0;
         display: flex;
         border-top: 1px solid $color-white;
         padding: 1rem 0 0 0;
@@ -203,10 +215,18 @@
             margin-top: 2.5rem;
         }
 
+
+
         &__img{
 
             display: flex;
             position: relative;
+            padding-left: 3rem;
+            margin-top: 0.5rem;
+
+            @include respond(small-desktop){ 
+                margin-left: -1rem;
+            }
            
             &--1{
                 height: 3rem;
@@ -215,13 +235,17 @@
                 object-fit: cover;
 
                 @include respond(small-tab-land){ 
-                    height: 2.5rem;
-                    width: 2.5rem;
+                    height: 3rem;
+                    width: 3rem;
                 }
 
                 @include respond(small-tab-port){
-                    height: 3rem;
-                    width: 3rem;
+                 
+                }
+
+                @include respond(tab-port){
+                    height: 3.5rem;
+                    width: 3.5rem;
                 }
 
                 @include respond(large-phone){
@@ -240,19 +264,24 @@
                 width: 3rem;
                 border-radius: 50%;
                 object-fit: cover;
-                position: absolute;
-                left: 2rem;
+                margin-left: -1rem;
                 border: 1px solid $color-white;
 
                 @include respond(small-tab-land){ 
-                    height: 2.5rem;
-                    width: 2.5rem;
-                }
-
-                @include respond(small-tab-port){
                     height: 3rem;
                     width: 3rem;
                 }
+
+                @include respond(small-tab-port){
+                  
+                }
+
+                
+                @include respond(tab-port){
+                    height: 3.5rem;
+                    width: 3.5rem;
+                }
+
 
                 @include respond(large-phone){
                     height: 4rem;
@@ -270,17 +299,27 @@
                 width: 3rem;
                 border-radius: 50%;
                 // background-color: peru;
-                margin-left: 2.5rem;
+                margin-left: 1rem;
+                padding: 0.6rem;
 
-                @include respond(small-tab-land){ 
-                    height: 2.5rem;
-                    width: 2.5rem;
+                @include respond(tab-land){
+                   margin-left: 0.2rem;
                 }
 
-                @include respond(small-tab-port){
+                @include respond(small-tab-land){ 
                     height: 3rem;
                     width: 3rem;
                 }
+
+                @include respond(small-tab-port){
+                   
+                }
+ 
+                @include respond(tab-port){
+                    height: 3.5rem;
+                    width: 3.5rem;
+                }
+
 
                 @include respond(large-phone){
                     height: 4rem;
@@ -301,9 +340,11 @@
             // background-color: $color-white;
             border-radius: 2rem;
             padding: 1rem;
+            // padding-right: 2rem;
+            margin-right: 2rem;
 
             @include respond(small-desktop){ 
-                padding: 0.6rem;
+                margin-right: 1rem;
             }
 
             
@@ -322,4 +363,8 @@
             }
         }
     }
+}
+
+.card-project:first-child .card-project__last{
+    border-top: 1px solid $color-grey-lighter;
 }

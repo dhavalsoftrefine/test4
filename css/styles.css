@@ -40,14 +40,19 @@ html {
 body {
   box-sizing: border-box;
   background-color: #eff2fa;
-  font-family: 'Inter', sans-serif;
-  color: #474343; }
+  font-family: 'Inter', 'Poppins', sans-serif;
+  color: #474343;
+  position: relative; }
 
 ::selection {
   background-color: #eff2fa; }
 
 .header-center {
   padding: 0rem 2rem; }
+
+.section-title:nth-child(2) {
+  font-size: 1.5rem;
+  color: #474343; }
 
 .section-head {
   display: flex;
@@ -76,37 +81,52 @@ body {
   color: #eff2fa; }
 
 .orangelight {
-  background-color: #fdca9c; }
+  background-color: #f9dec7; }
 
 .orange {
-  color: #fdca9c;
+  color: #fa851e;
   background-color: #fff; }
+
+.orange-icon {
+  color: #fff;
+  background-color: #fa851e; }
 
 .lightgreen {
   background-color: #b1edce; }
 
 .green {
-  color: #b1edce;
+  color: #48c74a;
   background-color: #fff; }
+
+.green-icon {
+  color: #fff;
+  background-color: #48c74a; }
 
 .lightpink {
-  background-color: #fea8c3; }
+  background-color: #f8d0dd; }
 
 .pink {
-  color: #fea8c3;
+  color: #f66b99;
   background-color: #fff; }
+
+.pink-icon {
+  color: #fff;
+  background-color: #f66b99; }
 
 .progress-blue::after {
   background-color: #3fd9ff; }
 
 .progress-orange::after {
-  background-color: #fb9b47; }
+  background-color: #fa851e;
+  width: 30% !important; }
 
 .progress-green::after {
-  background-color: #52ffa6; }
+  background-color: #48c74a;
+  width: 50% !important; }
 
 .progress-pink::after {
-  background-color: #ff5087; }
+  background-color: #f66b99;
+  width: 20% !important; }
 
 .horizontal-line-small {
   width: 2px;
@@ -114,23 +134,37 @@ body {
   background-color: #bccad1;
   margin-left: 2rem; }
 
+.main-content {
+  margin-left: 8.5rem;
+  margin-top: 8rem; }
+  @media only screen and (max-width: 46.87em) {
+    .main-content {
+      margin-left: 0.5rem;
+      margin-top: 10rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .main-content {
+      margin-left: -1rem; } }
+
 .section-projects {
   background-color: #fff;
-  border-radius: 50px;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
   box-shadow: 0 0 2px 5px #eff2fa;
   padding: 3.5rem;
+  padding-bottom: 0rem;
   overflow: hidden;
   height: 90vh; }
   @media only screen and (max-width: 46.87em) {
     .section-projects {
       margin-left: 4rem;
-      margin-top: 5rem; } }
+      margin-top: 5rem;
+      padding-bottom: 22.2rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-projects {
       margin-top: 5rem; } }
   @media only screen and (max-width: 28.12em) {
     .section-projects {
-      margin-top: 3.5rem; } }
+      margin-top: 5.5rem; } }
 
 .progress {
   display: flex;
@@ -212,7 +246,7 @@ body {
       margin-top: 5rem; } }
 
 .message-box-container {
-  height: 80vh;
+  height: 82.5vh;
   overflow: scroll; }
   .message-box-container::-webkit-scrollbar {
     width: 0; }
@@ -254,8 +288,8 @@ body {
       .message-box__name {
         font-size: 2.5rem; } }
   .message-box__fav {
-    height: 2rem;
-    width: 2rem; }
+    height: 2.5rem;
+    width: 2.5rem; }
     @media only screen and (max-width: 56.25em) {
       .message-box__fav {
         height: 3rem;
@@ -280,15 +314,15 @@ body {
         font-size: 1.5rem; } }
   .message-box:hover {
     background-color: #fff;
-    transform: translateX(5rem);
     border: none;
     border-radius: 2rem;
-    scale: 1.1;
+    scale: 1.05;
     box-shadow: 0 0 2px 5px #eff2fa; }
 
 .icon {
-  width: 4rem;
-  height: 4rem; }
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer; }
   @media only screen and (max-width: 65.62em) {
     .icon {
       width: 3rem;
@@ -300,6 +334,7 @@ body {
   .icon__add {
     background-color: black;
     color: #eff2fa;
+    padding: 0.7rem;
     border-radius: 50%; }
     @media only screen and (max-width: 28.12em) {
       .icon__add {
@@ -317,6 +352,9 @@ body {
     width: 3.5rem;
     padding: 0.5rem;
     margin: 0.5rem 0 0 0.5rem; }
+  .icon__progress {
+    height: 3rem;
+    width: 3rem; }
   .icon__sidebar {
     height: 6rem !important;
     width: 6rem !important;
@@ -328,6 +366,9 @@ body {
     .icon__sidebar:hover {
       background-color: #474343;
       color: #eff2fa; }
+  .icon__head {
+    height: 2.5rem;
+    width: 2.5rem; }
 
 #test::after {
   content: '';
@@ -368,8 +409,10 @@ body {
 
 .card-project {
   border-radius: 3rem;
-  padding: 2rem;
-  box-shadow: 0px 0px 5px 5px #eff2fa; }
+  box-shadow: 0px 0px 10px 3px #eff2fa; }
+  @media only screen and (max-width: 28.12em) {
+    .card-project:first-child {
+      margin-top: 1rem; } }
   @media only screen and (max-width: 65.62em) {
     .card-project {
       width: 112%; } }
@@ -384,14 +427,17 @@ body {
       width: 90%; } }
   @media only screen and (max-width: 28.12em) {
     .card-project {
-      width: 100%; } }
+      margin-left: 5%;
+      width: 90%; } }
+  .card-project__top {
+    padding: 2rem; }
   .card-project__head {
     display: flex;
     justify-content: space-between; }
     .card-project__head__date {
       color: #474343;
       font-weight: 600;
-      font-size: 2rem; }
+      font-size: 1.5rem; }
       @media only screen and (max-width: 46.87em) {
         .card-project__head__date {
           font-size: 1.7rem; } }
@@ -400,8 +446,8 @@ body {
           font-size: 2.2rem; } }
     .card-project__head__icon {
       color: black;
-      height: 3rem;
-      width: 3rem; }
+      height: 2.5rem;
+      width: 2.5rem; }
       @media only screen and (max-width: 37.5em) {
         .card-project__head__icon {
           height: 3.5rem;
@@ -426,7 +472,8 @@ body {
     .card-project__text-subject {
       color: #474343;
       font-weight: 600;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      margin-top: 1rem; }
       @media only screen and (max-width: 56.25em) {
         .card-project__text-subject {
           font-size: 2rem; } }
@@ -450,10 +497,10 @@ body {
           font-size: 1.7rem; } }
     .card-project__progress-width {
       width: 100%;
-      height: 0.5rem;
+      height: 0.7rem;
       background-color: #eff2fa;
       border-radius: 5px;
-      margin: 0.5rem 0;
+      margin: 1rem 0;
       position: relative; }
       @media only screen and (max-width: 37.5em) {
         .card-project__progress-width {
@@ -462,7 +509,7 @@ body {
         content: "";
         position: absolute;
         width: 90%;
-        height: 0.5rem;
+        height: 0.7rem;
         border-radius: 5px; }
     .card-project__progress-percentage {
       text-align: end;
@@ -477,7 +524,7 @@ body {
         .card-project__progress-percentage {
           font-size: 1.5rem; } }
   .card-project__last {
-    margin-top: 1rem;
+    margin: 1rem 0 1rem 0;
     display: flex;
     border-top: 1px solid #fff;
     padding: 1rem 0 0 0;
@@ -487,7 +534,12 @@ body {
         margin-top: 2.5rem; } }
     .card-project__last__img {
       display: flex;
-      position: relative; }
+      position: relative;
+      padding-left: 3rem;
+      margin-top: 0.5rem; }
+      @media only screen and (max-width: 84.3em) {
+        .card-project__last__img {
+          margin-left: -1rem; } }
       .card-project__last__img--1 {
         height: 3rem;
         width: 3rem;
@@ -495,12 +547,12 @@ body {
         object-fit: cover; }
         @media only screen and (max-width: 65.62em) {
           .card-project__last__img--1 {
-            height: 2.5rem;
-            width: 2.5rem; } }
-        @media only screen and (max-width: 46.87em) {
-          .card-project__last__img--1 {
             height: 3rem;
             width: 3rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .card-project__last__img--1 {
+            height: 3.5rem;
+            width: 3.5rem; } }
         @media only screen and (max-width: 37.5em) {
           .card-project__last__img--1 {
             height: 4rem;
@@ -514,17 +566,16 @@ body {
         width: 3rem;
         border-radius: 50%;
         object-fit: cover;
-        position: absolute;
-        left: 2rem;
+        margin-left: -1rem;
         border: 1px solid #fff; }
         @media only screen and (max-width: 65.62em) {
           .card-project__last__img--2 {
-            height: 2.5rem;
-            width: 2.5rem; } }
-        @media only screen and (max-width: 46.87em) {
-          .card-project__last__img--2 {
             height: 3rem;
             width: 3rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .card-project__last__img--2 {
+            height: 3.5rem;
+            width: 3.5rem; } }
         @media only screen and (max-width: 37.5em) {
           .card-project__last__img--2 {
             height: 4rem;
@@ -537,15 +588,19 @@ body {
         height: 3rem;
         width: 3rem;
         border-radius: 50%;
-        margin-left: 2.5rem; }
-        @media only screen and (max-width: 65.62em) {
+        margin-left: 1rem;
+        padding: 0.6rem; }
+        @media only screen and (max-width: 75em) {
           .card-project__last__img--3 {
-            height: 2.5rem;
-            width: 2.5rem; } }
-        @media only screen and (max-width: 46.87em) {
+            margin-left: 0.2rem; } }
+        @media only screen and (max-width: 65.62em) {
           .card-project__last__img--3 {
             height: 3rem;
             width: 3rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .card-project__last__img--3 {
+            height: 3.5rem;
+            width: 3.5rem; } }
         @media only screen and (max-width: 37.5em) {
           .card-project__last__img--3 {
             height: 4rem;
@@ -558,10 +613,11 @@ body {
       font-size: 1.5rem;
       font-weight: 600;
       border-radius: 2rem;
-      padding: 1rem; }
+      padding: 1rem;
+      margin-right: 2rem; }
       @media only screen and (max-width: 84.3em) {
         .card-project__last--days-left {
-          padding: 0.6rem; } }
+          margin-right: 1rem; } }
       @media only screen and (max-width: 46.87em) {
         .card-project__last--days-left {
           font-size: 1.7rem;
@@ -573,6 +629,9 @@ body {
       @media only screen and (max-width: 28.12em) {
         .card-project__last--days-left {
           font-size: 1.7rem; } }
+
+.card-project:first-child .card-project__last {
+  border-top: 1px solid #e5ecef; }
 
 .grid {
   display: grid; }
@@ -605,7 +664,12 @@ body {
 .nav {
   width: 100%;
   height: 10vh;
-  padding: 1.5rem 3rem; }
+  padding: 1.5rem 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #eff2fa; }
   .nav-mid {
     display: flex;
     gap: 15rem; }
@@ -625,12 +689,16 @@ body {
   font-size: 3rem;
   font-weight: 700;
   color: black; }
+  @media only screen and (max-width: 28.12em) {
+    .logo {
+      font-size: 2.7rem;
+      margin-top: 0.5rem; } }
 
 .search-section {
   position: relative; }
   @media only screen and (max-width: 56.25em) {
     .search-section {
-      margin-left: -10rem; } }
+      margin-left: -12rem; } }
   @media only screen and (max-width: 46.87em) {
     .search-section {
       height: 5rem;
@@ -641,25 +709,36 @@ body {
       border-radius: 5px; } }
   @media only screen and (max-width: 37.5em) {
     .search-section {
-      left: 15rem;
-      width: 90%; } }
-  @media only screen and (max-width: 37.5em) {
-    .search-section {
-      left: 14rem; } }
+      left: 16rem;
+      width: 86%; } }
 
 .search {
   height: 4.5rem;
-  padding-left: 2.5rem;
+  padding-left: 5rem;
   border-radius: 50px;
   background-color: #fff;
   border: none;
   width: 40rem;
   box-shadow: 0px 0px 2px 1px #eff2fa; }
+  .search::placeholder {
+    font-size: 1.5rem;
+    color: #6c7b7f; }
+    @media only screen and (max-width: 75em) {
+      .search::placeholder {
+        font-size: 1.8rem;
+        position: absolute;
+        top: 1.3rem; } }
+    @media only screen and (max-width: 46.87em) {
+      .search::placeholder {
+        font-size: 2rem; } }
   @media only screen and (max-width: 46.87em) {
     .search {
       width: 96%;
       border-radius: 5px;
       height: 5.2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .search {
+      width: 100%; } }
 
 .profile-photo {
   width: 4rem;
@@ -697,10 +776,12 @@ body {
   flex-direction: column;
   height: 90vh;
   width: 7%;
-  padding: 5rem 2rem 0;
+  padding: 5rem 1.3rem 0;
   gap: 2rem;
   float: left;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  position: fixed;
+  border-right-color: #eff2fa; }
   @media only screen and (max-width: 75em) {
     .side-bar {
       padding: 5rem 1rem 0; } }
@@ -710,9 +791,11 @@ body {
       padding: 5rem 1rem; } }
   @media only screen and (max-width: 46.87em) {
     .side-bar {
-      margin-left: -10rem;
-      position: absolute;
-      background-color: #eff2fa; } }
+      margin-left: -15rem;
+      margin-top: -5rem;
+      position: fixed;
+      background-color: #eff2fa;
+      z-index: 50; } }
   @media only screen and (max-width: 37.5em) {
     .side-bar {
       margin-top: -3rem;

@@ -1,6 +1,7 @@
 .icon{
-    width: $icon-big;
-    height: $icon-big;
+    width: $icon-medium;
+    height: $icon-medium;
+    cursor: pointer;
     // background-color: purple;
 
     @include respond(small-tab-land){
@@ -16,11 +17,12 @@
     &__add{
         background-color: $color-black-dark;
         color: $color-primary;
+        padding: 0.7rem;
 
         border-radius: 50%;
         // margin-left: 36rem;
 
-        @include respond(phone){  
+        @include respond(phone){
             display: none;
         }
     }
@@ -48,6 +50,11 @@
         // }
     }
 
+    &__progress{
+        height: $icon-small;
+        width: $icon-small;
+    }
+
     &__sidebar{
         height: $icon-bigger !important;
         width: $icon-bigger !important;
@@ -64,6 +71,11 @@
             background-color: $color-black;
             color: $color-primary;
         }
+    }
+
+    &__head{
+        height: $icon-smaller;
+        width: $icon-smaller;
     }
 }
 

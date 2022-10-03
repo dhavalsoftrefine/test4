@@ -7,6 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/styles.css">
 
     <title>Document</title>
@@ -14,44 +19,25 @@
 <body>
 
     <nav class="nav grid grid-3">
-        <!-- <svg class="icon icon__menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-        <p class="logo">Portfolio</p>
-        <input class ="search" type="text" placeholder="Search..">
-
-        <div class="nav-end">
-            <svg class="icon icon__add" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-            </svg>
-              
-            <svg class="icon icon__bell" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
-            </svg>
-            <div class="horizontal-line-small">&nbsp</div>
-            <img class="profile-photo" src="./images/profile.jpg" />
-            <p class="username">Hira R </p>
-        </div> -->
-        
-        <!-- <div class="nav-start"> -->
+        <div class="nav-start">
         <label for="sidebar-checkbox">
                 <svg class="icon icon__menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
         </label>
-        <!-- </div> -->
+        </div>
         <div class="nav-mid">
             <p class="logo">Portfolio</p>
             <div class="search-section">
                 <svg class="icon icon__search" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                 </svg>              
-                <input class ="search" type="text" placeholder="    Search..">
+                <input class ="search" type="text" placeholder="Search..">
             </div>
             
         </div>
         <div class="nav-end">
-            <svg class="icon icon__add" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <svg class="icon icon__add" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
             </svg>
             
@@ -145,26 +131,28 @@
                 </div>
                 <div class="card-project-container card-grid grid-2-same">
                     <div class="card-project">
-                        <div class="card-project__head">
-                            <p class="card-project__head__date">July 2,2020</p>
-                            <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
-                            </svg>
-                        </div> 
-                        <div class="card-project__text">
-                            <p class="card-project__text-title">Web Designing</p>
-                            <p class="card-project__text-subject">Prototyping</p>
-                        </div>
-                        <div class="card-project__progress">
-                            <p class="card-project__progress-text">Progress</p>
-                            <div class="card-project__progress-width progress-blue"></div>
-                            <p class="card-project__progress-percentage">90%</p>
+                        <div class="card-project__top">
+                            <div class="card-project__head">
+                                <p class="card-project__head__date">July 2,2020</p>
+                                <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                </svg>
+                            </div> 
+                            <div class="card-project__text">
+                                <p class="card-project__text-title">Web Designing</p>
+                                <p class="card-project__text-subject">Prototyping</p>
+                            </div>
+                            <div class="card-project__progress">
+                                <p class="card-project__progress-text">Progress</p>
+                                <div class="card-project__progress-width progress-blue"></div>
+                                <p class="card-project__progress-percentage">90%</p>
+                            </div>
                         </div>
                         <div class="card-project__last">
                             <div class="card-project__last__img">
                                 <img class="card-project__last__img--1" src="./images/person-1.jpg" alt="person-1">
                                 <img class="card-project__last__img--2"src="./images/person-2.jpg" alt="person-2">
-                                <svg class="card-project__last__img--3 blue"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <svg class="card-project__last__img--3 blue"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.2" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                                 </svg>
                             </div>
@@ -173,26 +161,29 @@
                     </div>
 
                     <div class="card-project orangelight">
-                        <div class="card-project__head">
-                            <p class="card-project__head__date">July 2,2020</p>
-                            <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
-                            </svg>
-                        </div> 
-                        <div class="card-project__text">
-                            <p class="card-project__text-title">Mobile App</p>
-                            <p class="card-project__text-subject">Shopping</p>
+                        <div class="card-project__top">
+                            <div class="card-project__head">
+                                <p class="card-project__head__date">July 2,2020</p>
+                                <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                </svg>
+                            </div> 
+                            <div class="card-project__text">
+                                <p class="card-project__text-title">Mobile App</p>
+                                <p class="card-project__text-subject">Shopping</p>
+                            </div>
+                            <div class="card-project__progress">
+                                <p class="card-project__progress-text">Progress</p>
+                                <div class="card-project__progress-width progress-orange"></div>
+                                <p class="card-project__progress-percentage">30%</p>
+                            </div>
                         </div>
-                        <div class="card-project__progress">
-                            <p class="card-project__progress-text">Progress</p>
-                            <div class="card-project__progress-width progress-orange"></div>
-                            <p class="card-project__progress-percentage">90%</p>
-                        </div>
+                       
                         <div class="card-project__last">
                             <div class="card-project__last__img">
                                 <img class="card-project__last__img--1" src="./images/person-1.jpg" alt="person-1">
                                 <img class="card-project__last__img--2"src="./images/person-2.jpg" alt="person-2">
-                                <svg class="card-project__last__img--3 orange"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <svg class="card-project__last__img--3 orange-icon"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                                 </svg>
                             </div>
@@ -200,26 +191,29 @@
                         </div>
                     </div>
                     <div class="card-project lightgreen">
-                        <div class="card-project__head">
-                            <p class="card-project__head__date">July 2,2020</p>
-                            <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
-                            </svg>
-                        </div> 
-                        <div class="card-project__text">
-                            <p class="card-project__text-title">Dashboard</p>
-                            <p class="card-project__text-subject">Medical</p>
+                        <div class="card-project__top">
+                            <div class="card-project__head">
+                                <p class="card-project__head__date">July 2,2020</p>
+                                <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                </svg>
+                            </div> 
+                            <div class="card-project__text">
+                                <p class="card-project__text-title">Dashboard</p>
+                                <p class="card-project__text-subject">Medical</p>
+                            </div>
+                            <div class="card-project__progress">
+                                <p class="card-project__progress-text">Progress</p>
+                                <div class="card-project__progress-width progress-green"></div>
+                                <p class="card-project__progress-percentage">50%</p>
+                            </div>
                         </div>
-                        <div class="card-project__progress">
-                            <p class="card-project__progress-text">Progress</p>
-                            <div class="card-project__progress-width progress-green"></div>
-                            <p class="card-project__progress-percentage">90%</p>
-                        </div>
+                        
                         <div class="card-project__last">
                             <div class="card-project__last__img">
                                 <img class="card-project__last__img--1" src="./images/person-1.jpg" alt="person-1">
                                 <img class="card-project__last__img--2"src="./images/person-2.jpg" alt="person-2">
-                                <svg class="card-project__last__img--3 green"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <svg class="card-project__last__img--3 green-icon"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                                 </svg>
                             </div>
@@ -227,26 +221,29 @@
                         </div>
                     </div>
                     <div class="card-project lightpink">
-                        <div class="card-project__head">
-                            <p class="card-project__head__date">July 2,2020</p>
-                            <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
-                            </svg>
-                        </div> 
-                        <div class="card-project__text">
-                            <p class="card-project__text-title">Web Designing</p>
-                            <p class="card-project__text-subject">Welframing</p>
+                        <div class="card-project__top">
+                            <div class="card-project__head">
+                                <p class="card-project__head__date">July 2,2020</p>
+                                <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                </svg>
+                            </div> 
+                            <div class="card-project__text">
+                                <p class="card-project__text-title">Web Designing</p>
+                                <p class="card-project__text-subject">Welframing</p>
+                            </div>
+                            <div class="card-project__progress">
+                                <p class="card-project__progress-text">Progress</p>
+                                <div class="card-project__progress-width progress-pink"></div>
+                                <p class="card-project__progress-percentage">20%</p>
+                            </div>
                         </div>
-                        <div class="card-project__progress">
-                            <p class="card-project__progress-text">Progress</p>
-                            <div class="card-project__progress-width progress-pink"></div>
-                            <p class="card-project__progress-percentage">90%</p>
-                        </div>
+                       
                         <div class="card-project__last">
                             <div class="card-project__last__img">
                                 <img class="card-project__last__img--1" src="./images/person-1.jpg" alt="person-1">
                                 <img class="card-project__last__img--2"src="./images/person-2.jpg" alt="person-2">
-                                <svg class="card-project__last__img--3 pink" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <svg class="card-project__last__img--3 pink-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                                 </svg>
                             </div>
@@ -254,21 +251,24 @@
                         </div>
                     </div>
                     <div class="card-project lightpink">
-                        <div class="card-project__head">
-                            <p class="card-project__head__date">July 2,2020</p>
-                            <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
-                            </svg>
-                        </div> 
-                        <div class="card-project__text">
-                            <p class="card-project__text-title">Web Designing</p>
-                            <p class="card-project__text-subject">Prototyping</p>
+                        <div class="card-project__top">
+                            <div class="card-project__head">
+                                <p class="card-project__head__date">July 2,2020</p>
+                                <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                </svg>
+                            </div> 
+                            <div class="card-project__text">
+                                <p class="card-project__text-title">Web Designing</p>
+                                <p class="card-project__text-subject">Prototyping</p>
+                            </div>
+                            <div class="card-project__progress">
+                                <p class="card-project__progress-text">Progress</p>
+                                <div class="card-project__progress-width progress-pink"></div>
+                                <p class="card-project__progress-percentage">20%</p>
+                            </div>
                         </div>
-                        <div class="card-project__progress">
-                            <p class="card-project__progress-text">Progress</p>
-                            <div class="card-project__progress-width progress-pink"></div>
-                            <p class="card-project__progress-percentage">90%</p>
-                        </div>
+                        
                         <div class="card-project__last">
                             <div class="card-project__last__img">
                                 <img class="card-project__last__img--1" src="./images/person-1.jpg" alt="person-1">
@@ -282,26 +282,29 @@
                     </div>
 
                     <div class="card-project orangelight">
-                        <div class="card-project__head">
-                            <p class="card-project__head__date">July 2,2020</p>
-                            <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
-                            </svg>
-                        </div> 
-                        <div class="card-project__text">
-                            <p class="card-project__text-title">Web Designing</p>
-                            <p class="card-project__text-subject">Prototyping</p>
+                        <div class="card-project__top">
+                            <div class="card-project__head">
+                                <p class="card-project__head__date">July 2,2020</p>
+                                <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                </svg>
+                            </div> 
+                            <div class="card-project__text">
+                                <p class="card-project__text-title">Mobile App</p>
+                                <p class="card-project__text-subject">Shopping</p>
+                            </div>
+                            <div class="card-project__progress">
+                                <p class="card-project__progress-text">Progress</p>
+                                <div class="card-project__progress-width progress-orange"></div>
+                                <p class="card-project__progress-percentage">30%</p>
+                            </div>
                         </div>
-                        <div class="card-project__progress">
-                            <p class="card-project__progress-text">Progress</p>
-                            <div class="card-project__progress-width progress-orange"></div>
-                            <p class="card-project__progress-percentage">90%</p>
-                        </div>
+                       
                         <div class="card-project__last">
                             <div class="card-project__last__img">
                                 <img class="card-project__last__img--1" src="./images/person-1.jpg" alt="person-1">
                                 <img class="card-project__last__img--2"src="./images/person-2.jpg" alt="person-2">
-                                <svg class="card-project__last__img--3 orange"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <svg class="card-project__last__img--3 orange-icon"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                                 </svg>
                             </div>
@@ -309,26 +312,29 @@
                         </div>
                     </div>
                     <div class="card-project lightgreen">
-                        <div class="card-project__head">
-                            <p class="card-project__head__date">July 2,2020</p>
-                            <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
-                            </svg>
-                        </div> 
-                        <div class="card-project__text">
-                            <p class="card-project__text-title">Web Designing</p>
-                            <p class="card-project__text-subject">Prototyping</p>
+                        <div class="card-project__top">
+                            <div class="card-project__head">
+                                <p class="card-project__head__date">July 2,2020</p>
+                                <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                </svg>
+                            </div> 
+                            <div class="card-project__text">
+                                <p class="card-project__text-title">Dashboard</p>
+                                <p class="card-project__text-subject">Medical</p>
+                            </div>
+                            <div class="card-project__progress">
+                                <p class="card-project__progress-text">Progress</p>
+                                <div class="card-project__progress-width progress-green"></div>
+                                <p class="card-project__progress-percentage">50%</p>
+                            </div>
                         </div>
-                        <div class="card-project__progress">
-                            <p class="card-project__progress-text">Progress</p>
-                            <div class="card-project__progress-width progress-green"></div>
-                            <p class="card-project__progress-percentage">90%</p>
-                        </div>
+                        
                         <div class="card-project__last">
                             <div class="card-project__last__img">
                                 <img class="card-project__last__img--1" src="./images/person-1.jpg" alt="person-1">
-                                <img class="card-project__last__img--2" src="./images/person-2.jpg" alt="person-2">
-                                <svg class="card-project__last__img--3 green"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <img class="card-project__last__img--2"src="./images/person-2.jpg" alt="person-2">
+                                <svg class="card-project__last__img--3 green-icon"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                                 </svg>
                             </div>
@@ -336,26 +342,29 @@
                         </div>
                     </div>
                     <div class="card-project lightpink">
-                        <div class="card-project__head">
-                            <p class="card-project__head__date">July 2,2020</p>
-                            <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
-                            </svg>
-                        </div> 
-                        <div class="card-project__text">
-                            <p class="card-project__text-title">Web Designing</p>
-                            <p class="card-project__text-subject">Prototyping</p>
+                        <div class="card-project__top">
+                            <div class="card-project__head">
+                                <p class="card-project__head__date">July 2,2020</p>
+                                <svg class="card-project__head__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                </svg>
+                            </div> 
+                            <div class="card-project__text">
+                                <p class="card-project__text-title">Web Designing</p>
+                                <p class="card-project__text-subject">Welframing</p>
+                            </div>
+                            <div class="card-project__progress">
+                                <p class="card-project__progress-text">Progress</p>
+                                <div class="card-project__progress-width progress-pink"></div>
+                                <p class="card-project__progress-percentage">20%</p>
+                            </div>
                         </div>
-                        <div class="card-project__progress">
-                            <p class="card-project__progress-text">Progress</p>
-                            <div class="card-project__progress-width progress-pink"></div>
-                            <p class="card-project__progress-percentage">90%</p>
-                        </div>
+                       
                         <div class="card-project__last">
                             <div class="card-project__last__img">
                                 <img class="card-project__last__img--1" src="./images/person-1.jpg" alt="person-1">
                                 <img class="card-project__last__img--2"src="./images/person-2.jpg" alt="person-2">
-                                <svg class="card-project__last__img--3 pink" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <svg class="card-project__last__img--3 pink-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                                 </svg>
                             </div>

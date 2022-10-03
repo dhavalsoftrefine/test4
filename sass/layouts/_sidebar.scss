@@ -4,10 +4,12 @@
     // background-color: aqua;
     height: 90vh;
     width: 7%;
-    padding: 5rem 2rem 0;
+    padding: 5rem 1.3rem 0;
     gap: 2rem;
     float: left;
     transition: all 0.5s;
+    position: fixed;
+    border-right-color: $color-primary;
     // margin-left: -8rem;
 
     @include respond(tab-land){  
@@ -20,9 +22,11 @@
     }
 
     @include respond(small-tab-port){
-        margin-left: -10rem;
-        position: absolute;
+        margin-left: -15rem;
+        margin-top: -5rem;
+        position: fixed;
         background-color: $color-primary;
+        z-index: 50;
     }
 
     @include respond(large-phone){

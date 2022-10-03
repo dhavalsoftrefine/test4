@@ -3,6 +3,11 @@
     height: 10vh;
     // background-color: aqua;
     padding: 1.5rem 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;    
+    z-index: 10;
+    background-color: $color-primary;
 
     &-mid{
         display: flex;
@@ -29,13 +34,18 @@
     font-weight: 700;
     // margin-left: 10rem;
     color: $color-black-dark;
+
+    @include respond(phone){  
+       font-size: 2.7rem;
+       margin-top: 0.5rem; 
+    }
 }
 
 .search-section{
     position: relative;
 
     @include respond(tab-port){
-        margin-left: -10rem;
+        margin-left: -12rem;
     }
 
     @include respond(small-tab-port){
@@ -49,20 +59,16 @@
     }
 
     @include respond(large-phone){
-        left: 15rem;
-        width: 90%;
+        left: 16rem;
+        width: 86%;
     }
 
-    @include respond(large-phone){
-        left: 14rem;
-        // width: 90%;
-    }
 }
 
 .search{    
         // background: url("https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png") top left no-repeat; 
         height:4.5rem;
-        padding-left:2.5rem;  
+        padding-left:5rem;  
         border-radius: 50px;
         background-color: $color-white;
         border: none;
@@ -70,13 +76,30 @@
         width: 40rem;
         box-shadow: 0px 0px 2px 1px $color-primary;
 
-    @include respond(small-tab-port){ 
-        width: 96%;
-        border-radius: 5px;
-        height: 5.2rem;
-    }
+        &::placeholder{
+            font-size: 1.5rem;
+            color: $color-grey-dark;
 
-   
+            @include respond(tab-land){
+                font-size: 1.8rem;
+                position: absolute;
+                top: 1.3rem;
+            }
+
+            @include respond(small-tab-port){
+                font-size: 2rem;
+            }
+        }
+
+        @include respond(small-tab-port){ 
+            width: 96%;
+            border-radius: 5px;
+            height: 5.2rem;
+        }
+
+        @include respond(large-phone){
+            width: 100%;
+        }
 }
 
 .profile-photo{
